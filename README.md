@@ -36,6 +36,7 @@ A script that opens the given excel files, 'inspections.xlsx' and 'violations.xl
 * download file and place in a folder. Create a folder within this folder called 'data', this is where you will download the excel files to.
 * if in IDLE, open file and click run. The program will run itself.
 * if in a form of terminal, change directory to the location of the file. When in the correct directory run the program by using "python db_create.py".
+* RUN THIS SCRIPT FIRST
 
 ## sql_food.py
 ### Overview
@@ -45,7 +46,15 @@ A script that performs queries on the data placed within the database in **db_cr
 * Follow all previous instructions from **db_create.py**. To run this program make sure this file is in the same folder as the previous and this time run "python sql_food.py".
 
 ## excel_food.py
-This script creates a new excel workbook called "ViolationTypes.xlsx". It renames the first sheet to be called "Violation Types". The data that is put into this spreadsheet is queried from the data placed within the database from **db_create.py**. The query searches through the violations table to sort data into a violation code, its description and how many times it has occured. This information is saved into the created spreadsheet **ViolationTypes.xslx**.
+This script creates a new excel workbook called "ViolationTypes.xlsx". It renames the first sheet to be called "Violation Types". The data that is put into this spreadsheet is queried from the data placed within the database from **db_create.py**. The query searches through the violations table to sort data into a violation code, its description and how many times it has occurred. This information is saved into the created spreadsheet **ViolationTypes.xslx**.
 
-###instructions
+### Instructions
 * As previously mention make sure all the files are in the correct place and to run this script you will just need to input "python excel_food.py"   
+
+
+## numpy_food.py
+### Overview
+A script that takes a query and returns plotted data. The script uses a query to find average violations per month for each postcode. It plots the violations per month for the postcodes with the highest total violations, the violations per month for the postcodes with the greatest variances for violations, the average violations per month for all of California combined and the violations per month for all McDonalds and Burger Kings.
+
+### Instructions
+* Yet again just run "numpy_food.py" - this script will just return a print out of the average violations per month, per postcode. Unfortunately this is all that was achieved for this script. 
