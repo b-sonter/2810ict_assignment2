@@ -15,7 +15,8 @@ import sqlite3
 import openpyxl
 from openpyxl import *
 import sys
-import numpy
+import numpy as np
+import matplotlib.pyplot as plt
 
 #function to connect to Database
 def connectDB():
@@ -67,11 +68,17 @@ def findViolationsByPostcode():
     for row in data:
         print(row)
 
-    #notify user that the query has been found
-    #print("Violations have been found")
+def highestTotal():
+    pass
 
+def greatestVariance():
+    pass
 
+def perMonth():
+    pass
 
+def MvsB():
+    pass
 
 #run funtions as program
 if __name__ == '__main__':
